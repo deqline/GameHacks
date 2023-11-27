@@ -7,7 +7,7 @@ This repository is provided for educational purposes ( i.e to understand how gam
 
 ## Features
 ### CSGO 
-A simple internal hack which finds the current's game entity list (players). Tested in training.
+A simple internal hack which finds the current game entity list (players). Tested in training.
 
 ### Deceit
 see [image](https://i.ibb.co/sqCv8T9/279c710c-8b9e-4798-b035-ff71242f8de7-1.jpg)
