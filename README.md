@@ -22,7 +22,7 @@ A fully working external FallGuys hack with a player properties modifier.
 
 This hack use a kernel driver that hooks an api in the DirectX driver (dxgkrnl.sys), such that, the usermode application can communicate with the driver without being detected by EasyAntiCheat.
 
-The usermode was built by me at the time and the kernel mode part of this cheat was inspired by this [video series](https://www.youtube.com/watch?v=KNGr4m99PTU&list=PLdm1osymZj-fYsZM4MZ4n9Wz0QdAASHrD);
+The usermode executable was built by me at the time and the kernel driver code was inspired by this [video series](https://www.youtube.com/watch?v=KNGr4m99PTU&list=PLdm1osymZj-fYsZM4MZ4n9Wz0QdAASHrD);
 
 ## Building
 For all of these projects you will need "Visual Studio Community" in order to open the solution file ".sln" of the project and to build it in x64.
