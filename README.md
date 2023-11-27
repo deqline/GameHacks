@@ -10,11 +10,16 @@ This repository is provided for educational purposes ( i.e to understand how gam
 A simple internal hack which finds the current's game entity list (players). Tested in training.
 
 ### Deceit
+see [image](https://i.ibb.co/sqCv8T9/279c710c-8b9e-4798-b035-ff71242f8de7-1.jpg)
+
 An attempt to make an internal ESP cheat using DirectX on Deceit. 
 
-Couldn't find the correct ViewMatrix so doesn't work.
+Couldn't find the correct ViewMatrix so draws the ESP but not at the correct screen coordinates.
 
 ### Fallguys
+
+See [Demo](https://www.youtube.com/watch?v=_hc6_Ih4LdQ&t=3s)
+
 A fully working external FallGuys hack with a player properties modifier.
 
 This hack use a kernel driver that hooks an api in the DirectX driver (dxgkrnl.sys), such that the usermode application can communicate with the driver without being detected by EasyAntiCheat.
