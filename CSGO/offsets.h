@@ -1,0 +1,7 @@
+#pragma once
+
+#define ENTITY_COUNT 0xB03D30
+#define ENTITY_STEP 0x4
+#define LOCAL_ENTITY 0xA5BD04
+#define ENTITY_LIST_HOOK 0x38E419
+#define ENTITY_LIST_FUNC 0x38E410

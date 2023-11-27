@@ -1,0 +1,89 @@
+;
+; FallGuys.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Sample ; TODO: edit Class
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=FallGuys.cat
+DriverVer = 10/10/2020,17.6.22.70
+
+[DestinationDirs]
+DefaultDestDir = 12
+FallGuys_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+FallGuys.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%FallGuys.DeviceDesc%=FallGuys_Device, Root\FallGuys ; TODO: edit hw-id
+
+[FallGuys_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+FallGuys.sys
+
+;-------------- Service installation
+[FallGuys_Device.NT.Services]
+AddService = FallGuys,%SPSVCINST_ASSOCSERVICE%, FallGuys_Service_Inst
+
+; -------------- FallGuys driver install sections
+[FallGuys_Service_Inst]
+DisplayName    = %FallGuys.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\FallGuys.sys
+
+;
+;--- FallGuys_Device Coinstaller installation ------
+;
+
+[FallGuys_Device.NT.CoInstallers]
+AddReg=FallGuys_Device_CoInstaller_AddReg
+CopyFiles=FallGuys_Device_CoInstaller_CopyFiles
+
+[FallGuys_Device_CoInstaller_AddReg]
+;
+
+
+[FallGuys_Device_CoInstaller_CopyFiles]
+;
+
+
+[FallGuys_Device.NT.Wdf]
+KmdfService =  FallGuys, FallGuys_wdfsect
+[FallGuys_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+ClassName="Samples" ; TODO: edit ClassName
+DiskName = "FallGuys Installation Disk"
+FallGuys.DeviceDesc = "FallGuys Device"
+FallGuys.SVCDESC = "FallGuys Service"
