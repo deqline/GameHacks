@@ -20,7 +20,7 @@ See [Demo](https://www.youtube.com/watch?v=_hc6_Ih4LdQ&t=3s)
 
 A fully working external FallGuys hack with a player properties modifier.
 
-This hack use a kernel driver that hooks an api in the DirectX driver (dxgkrnl.sys), such that the usermode application can communicate with the driver without being detected by EasyAntiCheat.
+This hack use a kernel driver that hooks an api in the DirectX driver (dxgkrnl.sys), such that, the usermode application can communicate with the driver without being detected by EasyAntiCheat.
 
 The usermode was built by me at the time and the kernel mode part of this cheat was inspired by this [video series](https://www.youtube.com/watch?v=KNGr4m99PTU&list=PLdm1osymZj-fYsZM4MZ4n9Wz0QdAASHrD);
 
