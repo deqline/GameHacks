@@ -25,7 +25,11 @@ This hack use a kernel driver that hooks an api in the DirectX driver (dxgkrnl.s
 The usermode executable was built by me at the time and the kernel driver code was inspired by this [video series](https://www.youtube.com/watch?v=KNGr4m99PTU&list=PLdm1osymZj-fYsZM4MZ4n9Wz0QdAASHrD);
 
 ## Building
-For all of these projects you will need "Visual Studio Community" in order to open the solution file ".sln" of the project and to build it in x64.
+For all of these projects you will need `Visual Studio Community` in order to open the solution file (`.sln`) inside each project folder.
 
-The CSGO and Deceit projects will compile to a `.exe`, Fallguys will compile to a `.sys` that will have to be manually loaded on the system and an `.exe` file that will allow you to 
-modify certain player values once it established its communication with the kernel driver.
+Each project should be built in `x64`.
+
+The CSGO and Deceit projects will compile to a `.dll` file which will have to be manually injected in the game process.
+
+The Fallguys project will compile to a `.sys` (driver) that will have to be manually loaded on the system and an `.exe` file that will allow you to 
+modify certain player values once the kernel driver is loaded.
