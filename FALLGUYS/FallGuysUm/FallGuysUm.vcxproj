@@ -149,8 +149,6 @@
   <ItemGroup>
     <ClInclude Include="includes.hpp" />
     <ClInclude Include="mem.hpp" />
-    <ClInclude Include="meta_random.hpp" />
-    <ClInclude Include="obfuscate.hpp" />
     <ClInclude Include="offsets.hpp" />
     <ClInclude Include="structs.hpp" />
   </ItemGroup>
