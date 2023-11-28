@@ -23,13 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="obfuscate.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="structs.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="meta_random.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mem.hpp">
