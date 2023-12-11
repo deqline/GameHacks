@@ -1,8 +1,6 @@
 # GameHacks
 A collection of 3 game hacks I developped in the past.
 
-Keep in mind this was in the beginning of my programming journey so it shouldn't be used as a good coding reference.
-
 This repository is provided for educational purposes ( i.e to understand how game hacks work ) and for my personal portofolio. 
 
 ## Features
